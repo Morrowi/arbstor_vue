@@ -353,11 +353,11 @@ export default {
     getImg: function (hash){
 
       let result;
-      let tesdt
+
       let img = new Image();
       img.src = 'https://testnet.arbstore.org/assets/uploads/'+hash+'.jpeg';
       img.onload = function(){
-        tesdt = 1;
+
       };
 
       return result
