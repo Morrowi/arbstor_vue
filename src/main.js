@@ -1,8 +1,13 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store'
+import Notifications from '@kyvg/vue3-notification'
 
-Vue.config.productionTip = false
+import "bootstrap/dist/css/bootstrap.min.css";
+import './assets/css/fancybox.min.css';
+import './assets/css/main.css';
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+createApp(App).use(store).use(router).use(Notifications).mount('#app')
+
+
